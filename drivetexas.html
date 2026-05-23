@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Texas - Live Traffic for Laredo, Texas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #3d7a50 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .traffic-info {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #2d5a3d;
+        }
+        
+        .traffic-info h2 {
+            color: #1a472a;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .traffic-info p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .traffic-map-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #2d5a3d;
+        }
+        
+        .map-embed {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #2d5a3d;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .traffic-resources {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .resource-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #2d5a3d;
+            text-align: center;
+        }
+        
+        .resource-card h3 {
+            color: #1a472a;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .resource-card p {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .resource-card a {
+            display: inline-block;
+            background: #2d5a3d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .resource-card a:hover {
+            background: #1a472a;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .back-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        @media (max-width: 600px) {
+            .traffic-resources {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-embed {
+                height: 300px;
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+    
+    <header>
+        <h1>🚗 Drive Texas</h1>
+        <p>Watch Live Traffic for Laredo, Texas</p>
+    </header>
+    
+    <div class="container">
+        <div class="traffic-info">
+            <h2>📍 Real-Time Traffic Monitoring</h2>
+            <p>
+                Stay informed about current traffic conditions in Laredo, Texas. Monitor congestion, accidents, 
+                and road conditions across major highways and local routes. Plan your commute efficiently and 
+                avoid traffic delays with live updates.
+            </p>
+        </div>
+        
+        <div class="traffic-map-container">
+            <h2 style="color: #1a472a; margin-bottom: 15px;">Live Traffic Map</h2>
+            <iframe 
+                class="map-embed"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d116750.96432024197!2d-97.5160!3d27.5364!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1234567890"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <div class="traffic-resources">
+            <div class="resource-card">
+                <h3>🛣️ TX-DOT Traffic</h3>
+                <p>Official Texas Department of Transportation traffic information and updates.</p>
+                <a href="https://www.txdot.gov/" target="_blank">Visit TxDOT</a>
+            </div>
+            <div class="resource-card">
+                <h3>📡 Google Maps</h3>
+                <p>Real-time traffic conditions and navigation for Laredo routes.</p>
+                <a href="https://maps.google.com/maps?q=Laredo,+Texas" target="_blank">View on Google Maps</a>
+            </div>
+            <div class="resource-card">
+                <h3>📱 Waze</h3>
+                <p>Community-driven traffic updates and route optimization.</p>
+                <a href="https://www.waze.com/" target="_blank">Open Waze</a>
+            </div>
+            <div class="resource-card">
+                <h3>📞 Emergency Info</h3>
+                <p>Report accidents or traffic incidents in the Laredo area.</p>
+                <a href="tel:911">Call 911 (Emergency)</a>
+            </div>
+        </div>
+        
+        <div class="traffic-info" style="border-left-color: #2d5a3d;">
+            <h2>⚠️ Safety Tips</h2>
+            <p>
+                Always drive safely and follow traffic rules. Check conditions before traveling, avoid distractions, 
+                and maintain safe speeds. In case of emergencies or accidents, contact local authorities immediately. 
+                For real-time updates on road closures and incidents, monitor official TxDOT channels.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Drive Texas - Traffic Information for Laredo | All rights reserved.</p>
+    </footer>
+</body>
+</html>
