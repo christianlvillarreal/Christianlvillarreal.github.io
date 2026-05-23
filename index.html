@@ -14,52 +14,109 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            background: linear-gradient(135deg, #0047AB 0%, #1E90FF 50%, #00BFFF 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
         
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            color: #000;
             padding: 40px 20px;
             text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
         
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 
+                         0 0 20px rgba(0, 0, 0, 0.6),
+                         0 0 30px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+            letter-spacing: 2px;
         }
         
         header p {
             font-size: 1.2em;
-            opacity: 0.9;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.7),
+                         0 0 15px rgba(0, 0, 0, 0.5);
+            font-weight: 600;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
         }
         
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             padding: 30px;
             margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #0047AB;
         }
         
         .section h2 {
-            color: #667eea;
+            color: #0047AB;
             margin-bottom: 15px;
             font-size: 1.8em;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .kgns-link {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .kgns-link a {
+            display: inline-block;
+            background: #0047AB;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .kgns-link a:hover {
+            background: #1E90FF;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+        }
+        
+        .kgns-link p {
+            color: #000;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
         }
         
         footer {
-            background: #333;
-            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            color: #000;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            border-radius: 10px;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            font-weight: 600;
         }
     </style>
 </head>
@@ -70,24 +127,29 @@
     </header>
     
     <div class="container">
+        <div class="kgns-link">
+            <p>Watch Live News Coverage</p>
+            <a href="https://www.kgns.tv" target="_blank">Visit KGNS.TV</a>
+        </div>
+        
         <div class="section">
             <h2>📰 Latest News</h2>
-            <p>Stay updated with the latest news and information from Laredo, Texas. Check back soon for news updates!</p>
+            <p>Stay updated with the latest news and information from Laredo, Texas. Get real-time updates on local events, community news, and breaking stories that matter to you. Check KGNS.TV for comprehensive news coverage.</p>
         </div>
         
         <div class="section">
             <h2>🌤️ Weather</h2>
-            <p>Get current weather conditions and forecasts for Laredo, Texas. Weather information coming soon!</p>
+            <p>Get current weather conditions and forecasts for Laredo, Texas. Stay informed about temperature, humidity, wind conditions, and upcoming weather patterns. Keep track of severe weather alerts and warnings to keep you and your family safe.</p>
         </div>
         
         <div class="section">
             <h2>⚠️ Health & Safety</h2>
-            <p>Important health alerts and outbreak information for our community. Stay informed and stay safe!</p>
+            <p>Important health alerts and outbreak information for our community. Stay informed about public health updates, disease outbreaks, and safety recommendations. Your health and well-being are our top priority. Always follow guidance from local health officials.</p>
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2026 Laredo Local News. All rights reserved.</p>
+        <p>&copy; 2026 Laredo Local News - Powered by KGNS.TV | All rights reserved.</p>
     </footer>
 </body>
 </html>
