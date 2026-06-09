@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Posts - URGENTWIRE REPORT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #0047AB 0%, #1E90FF 50%, #00BFFF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            color: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 
+                         0 0 20px rgba(0, 0, 0, 0.6),
+                         0 0 30px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.7),
+                         0 0 15px rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        nav a.active {
+            background: #0047AB;
+            color: #fff;
+        }
+        
+        .post-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #0047AB;
+        }
+        
+        .post-card h3 {
+            color: #0047AB;
+            margin-bottom: 10px;
+            font-size: 1.6em;
+        }
+        
+        .post-date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .post-category {
+            display: inline-block;
+            background: #667eea;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .post-content {
+            color: #333;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background: #0047AB;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover {
+            background: #1E90FF;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid #0047AB;
+        }
+        
+        .section h2 {
+            color: #0047AB;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY POSTS</h1>
+        <p>Latest News & Updates from Laredo, Texas</p>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="myposts.html" class="active">My Posts</a>
+            <a href="alerts.html">Alerts</a>
+            <a href="todo.html">To-Do</a>
+            <a href="workflow-alerts.html">Workflows</a>
+        </nav>
+        
+        <div class="post-card">
+            <h3>📢 Community Update - June 2026</h3>
+            <div class="post-date">Published: June 9, 2026</div>
+            <span class="post-category">News</span>
+            <div class="post-content">
+                <p>Welcome to the new My Posts section! This page is dedicated to sharing the latest news, updates, and important information about Laredo, Texas. Stay tuned for regular updates on local events, weather patterns, and community announcements.</p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="post-card">
+            <h3>🌡️ Summer Weather Alert</h3>
+            <div class="post-date">Published: June 8, 2026</div>
+            <span class="post-category">Weather</span>
+            <div class="post-content">
+                <p>As we enter summer, residents should prepare for high temperatures and humidity. Make sure to stay hydrated and check on elderly neighbors during extreme heat warnings. Local authorities are monitoring weather conditions closely.</p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="post-card">
+            <h3>🏥 Health Advisory</h3>
+            <div class="post-date">Published: June 7, 2026</div>
+            <span class="post-category">Health</span>
+            <div class="post-content">
+                <p>Local health officials remind all residents to maintain proper hygiene practices and stay up to date with vaccinations. If you experience any symptoms of illness, please contact your healthcare provider or visit a local clinic.</p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="post-card">
+            <h3>🚗 Traffic Update - Highway 77</h3>
+            <div class="post-date">Published: June 6, 2026</div>
+            <span class="post-category">Traffic</span>
+            <div class="post-content">
+                <p>Construction continues on Highway 77. Please plan alternate routes during peak hours. For real-time traffic updates, visit DriveTexas.org to check current conditions on major roads in our area.</p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        
+        <div class="post-card">
+            <h3>📚 Local Events This Month</h3>
+            <div class="post-date">Published: June 5, 2026</div>
+            <span class="post-category">Events</span>
+            <div class="post-content">
+                <p>Several community events are scheduled for this month. Check back regularly for updates on festivals, community gatherings, and local programs. Community engagement is important to keeping Laredo vibrant and connected.</p>
+            </div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 URGENTWIRE REPORT - Laredo, Texas | All rights reserved.</p>
+    </footer>
+</body>
+</html>
